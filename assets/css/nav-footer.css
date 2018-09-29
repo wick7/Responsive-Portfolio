@@ -1,0 +1,224 @@
+
+/* MAIN */
+ 
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: 'Saira Condensed', sans-serif;
+   
+ }
+
+ nav {
+    width: 100vw;
+    height: auto;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: rgb(55, 187, 174);
+}
+
+.line {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.name { 
+    float: left;
+    height: 70px;
+    width: 23%;
+    margin-left: 20%;
+    
+    /* background-color: rgb(55, 187, 174); */
+    /* background: linear-gradient(to left, white 50%, rgb(55, 187, 174) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom; */
+    line-height: 70px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(55, 187, 174);
+    transition: .6s all ease;
+}
+
+/* .name:hover {
+    color: white;
+    background-position:left bottom;
+} */
+
+/* .name-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+} */
+
+/* a:hover .name {
+    color: white;
+    background-position:left bottom;
+} */
+
+a:hover .name-line {
+    border-top: .5px solid rgb(255, 255, 255);
+    background-position:left bottom;
+}
+
+.name:hover .name-line {
+    border-top: .5px solid rgb(255,255,255);
+}
+
+/* Desktop View Nav */
+
+.reg-nav {
+    background-color: green;
+    list-style-type: none;
+    line-height: 15px;
+    margin-bottom: 70px;
+    margin-right: 18%;
+}
+
+.reg-nav_links {
+    float: right;
+    padding: 10px;
+    margin-right: 15px;
+    transition: .5s all ease;
+    color: grey;
+}
+
+
+.reg-nav_links:hover {
+    transform: translateY(-3px);
+    background-color: rgb(55, 187, 174);
+    color: white;
+}
+
+/* Hambuger Menu & Dropdown Menu */
+
+.hamburger {
+    position: relative;
+    bottom: 40px;
+    width: 45px;
+}
+
+.hamburger::after {
+    content: "";
+    position: relative;
+    width: 45px;
+}
+.hamburger::before {
+    content: "";
+    position: relative;
+    width: 45px;
+}
+
+#dropDownOut {
+    background-color: white;
+    float: right;
+    position: absolute;
+    top: 80px;
+    left: 66%;
+    transition: .6s all ease-out;
+    opacity: 0;
+    z-index: 400;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+/* .dropDownIn {
+    background-color: white;
+    float: right;
+    position: absolute;
+    top: 80px;
+    left: 66%;
+    transition: .6s all ease-in;
+    z-index: 400;
+} */
+
+.dropDown__list {
+    list-style: none;
+    text-align: center;
+}
+
+.dropDown__link {
+    list-style: none;
+    position: relative;
+    top: 5px;
+    right: 20px;
+    color: grey;
+}
+
+.dropDown__list a {
+    text-decoration: none;
+}
+
+
+footer {
+    width: 100vw;
+    height: auto;
+    overflow: auto;
+    background-color: gray;
+    border-top: 10px solid rgb(55, 187, 174);
+    text-align: center;
+    line-height: 90px;
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+    
+    .reg-nav {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        position: relative;
+        bottom: 45px;
+        left: 40%;
+        float: right;
+        width: 45px;
+        border-top: 1px solid black;
+    }
+
+    .hamburger::after {
+        content: "";
+        position: relative;
+        top: 8px;
+        float: right;
+        width: 45px;
+        border-top: 1px solid black;
+    }
+    .hamburger::before {
+        content: "";
+        position: relative;
+        top: 19px;
+        float: right;
+        width: 45px;
+        border-top: 1px solid black;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) and (orientation: landscape) {
+    .name { 
+        background-color: rgb(55, 187, 174);
+        width: 10%;
+    }
+}
+
+/* @media screen and (max-width: 700px) and (orientation: portrait) and (orientation: landscape) {
+    .name { 
+        background-color: rgb(55, 187, 174); 
+        background:  rgb(55, 187, 174);
+        background-size: 200% 100%;
+        background-position: center;
+        color: white;
+        height: 70px;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    
+} */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="MobileOptimized" content="320">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/css/nav-footer.css">
+        <link rel="stylesheet" href="assets/css/index-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="dropDownOut">
+            <ul class="dropDown__list">
+                <a href="index.html"><li class="dropDown__link">About</li></a>
+                <a href="portfolio.html"><li class="dropDown__link">Portfolio</li></a>
+                <a href="contact.html"><li class="dropDown__link">Contact</li></a>
+            </ul>
+        </div>
+        <nav>
+            <a href="index.html"><div class="name">CRAIG W</div></a>
+            <ul class="reg-nav">
+                <a href="contact.html"><li class="reg-nav_links">Contact</li></a>
+                <a href="portfolio.html"><li class="reg-nav_links">Portfolio</li></a>
+                <a href="index.html"><li class="reg-nav_links">About</li></a>
+            </ul>
+            <div onclick="dropMe()" class="hamburger"></div>
+            
+        </nav>
+        <main>
+            <div class="about-con">
+                <div class="about">
+                    <h1>About Me</h1>
+                    <hr>
+                    <img src="assets/images/me.jpg" alt="me" >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                   
+                </div>
+            </div>
+        </main>
+        <div class="push"></div>
+        <footer><span>Copyright &copy;</span></footer>
+
+        <script>
+        
+        function dropMe() {
+            var menu = document.getElementById("dropDownOut");
+            menu.classList.toggle("show");
+        }
+
+        </script>
+    </body>
+</html>
+
+
